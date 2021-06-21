@@ -66,3 +66,8 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+.modalcol {
+    background: cornflowerblue;
+    color: floralwhite;
+}
