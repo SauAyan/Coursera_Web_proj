@@ -55,7 +55,7 @@
 <!---------------------------------------------------------Navigation Bar End----------------------------------------------------------------->
 <!---------------------------------------------------------Log in Modal---------------------------------------------------------------------->
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-lg" role="content">-->
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 <!---------------------------------------------------------log in modal end------------------------------------------------------------------->
 
@@ -104,22 +104,22 @@
                         <div class="col-3 col-sm align-self-center">
                             <img src="img/logo.png" class="img-fluid">
                         </div>
-                        <div class="col-3 align-self-center">
+             <div class="col-3 align-self-center">
 <!---------------------------------------------------------------Reserve table modal button--------------------------------------------------------->
-                    <a data-toggle="modal" data-target="#reservetableModal" role="button" class="btn btn-block nav-link btn-warning"
+            <a data-toggle="modal" data-target="#reservetableModal" role="button" class="btn btn-block nav-link btn-warning"
                     data-placement="bottom">Reserve Table</a>
 
 <!---------------------------------------------------------------Reserve table modal---------------------------------------------------------------->
-                    <div id="reservetableModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg" role="content">
+                <div id="reservetableModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg" role="content">--->
                             <!-- Modal content-->
-                            <div class="modal-content">
+                        <div class="modal-content">
                                 <div class="card" id="scroll-target">
                                     <h3 class="card-header bg-light text-black" style="color:black">Reserve a Table <button type="button" class="close float-right" data-dismiss="modal">×</button></h3>
                                     <div class="card-body">
                                         <form>
                                             <div class="form-group row">
-                                                <label for="noofguest" class="col-12 col-md-2 col-form-label" style="color:black" id="noofguest">Number of Guests</label>
+                                                <label for="noofguest" class="col-12 col-md-2 col-form-label" style="color:black" id="noofguest">Number of Guests</label>--->
 
                                                  <!-- Default inline 1-->
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -137,23 +137,23 @@
                                                 <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
                                                     <label style="color:black" class="custom-control-label" for="defaultInline3">3</label>
-                                                </div>  
+                                                </div>
                                                 
                                                 <!-- Default inline 4-->
-                                                <div class="custom-control custom-radio custom-control-inline">
+                                            <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
                                                     <label style="color:black" class="custom-control-label" for="defaultInline4">4</label>
-                                                </div> 
+                                                </div>
                                                 <!-- Default inline 5-->
-                                                <div class="custom-control custom-radio custom-control-inline">
+                                              <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample">
                                                     <label style="color:black" class="custom-control-label" for="defaultInline5">5</label>
-                                                </div> 
+                                                </div>
                                                 <!-- Default inline 6-->
-                                                <div class="custom-control custom-radio custom-control-inline">
+                                               <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample">
                                                     <label style="color:black" class="custom-control-label" for="defaultInline6">6</label>
-                                                </div> 
+                                                </div>
                                             </div>
 
                                             <div class="form-group row">
@@ -193,7 +193,7 @@
                                 </div>         
                             </div>
                         </div>
-                    </div>                    
+                    </div>                   
                 </div>
             </header>
             
@@ -460,15 +460,17 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
+<!--<script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
-</script>
+</script>-->
+
+
 <!------------------------carousel button------------------------------>
 
 
-<!--<script>
+<script>
     $(document).ready(function(){
         $("#mycarousel").carousel( { interval: 2000 } );
         $("#carousel-pause").click(function(){
@@ -478,7 +480,7 @@
             $("#mycarousel").carousel('cycle');
         });
     });
-</script>-->
+</script>
 
 <script>
     $("#carouselButton").click(function(){
