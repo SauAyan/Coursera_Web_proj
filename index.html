@@ -94,25 +94,110 @@
 <!---------------------------------------------------------log in modal end------------------------------------------------------------------->
 
 <!---------------------------------------------------------Jumbotron-------------------------------------------------------------------------->    
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-6 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+            <header class="jumbotron">
+                <div class="container">
+                    <div class="row row-header">
+                        <div class="col-6 col-sm-6">
+                            <h1>Ristorante con Fusion</h1>
+                            <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                        </div>
+                        <div class="col-3 col-sm align-self-center">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-3 align-self-center">
+<!---------------------------------------------------------------Reserve table modal button--------------------------------------------------------->
+                    <a data-toggle="modal" data-target="#reservetableModal" role="button" class="btn btn-block nav-link btn-warning"
+                    data-placement="bottom">Reserve Table</a>
+
+<!---------------------------------------------------------------Reserve table modal---------------------------------------------------------------->
+                    <div id="reservetableModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg" role="content">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="card" id="scroll-target">
+                                    <h3 class="card-header bg-light text-black" style="color:black">Reserve a Table <button type="button" class="close float-right" data-dismiss="modal">×</button></h3>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="noofguest" class="col-12 col-md-2 col-form-label" style="color:black" id="noofguest">Number of Guests</label>
+
+                                                 <!-- Default inline 1-->
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+                                                    <label style="color:black" class="custom-control-label" for="defaultInline1">1</label>
+                                                </div>
+                                                
+                                                <!-- Default inline 2-->
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                                                    <label style="color:black" class="custom-control-label" for="defaultInline2">2</label>
+                                                </div>
+                                                
+                                                <!-- Default inline 3-->
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+                                                    <label style="color:black" class="custom-control-label" for="defaultInline3">3</label>
+                                                </div>  
+                                                
+                                                <!-- Default inline 4-->
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+                                                    <label style="color:black" class="custom-control-label" for="defaultInline4">4</label>
+                                                </div> 
+                                                <!-- Default inline 5-->
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample">
+                                                    <label style="color:black" class="custom-control-label" for="defaultInline5">5</label>
+                                                </div> 
+                                                <!-- Default inline 6-->
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample">
+                                                    <label style="color:black" class="custom-control-label" for="defaultInline6">6</label>
+                                                </div> 
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="datetime" style="color:black" class="col-12 col-md-2 col-form-label">Section</label>
+
+                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                    <label class="btn btn-success active">
+                                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                                    </label>
+                                                    <label class="btn btn-danger">
+                                                      <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                                    </label>
+                                                    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="datetime" style="color:black" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                                <div class="col-6 col-md-3">
+                                                    <input type="date" class="form-control" id="date" name="areacode" placeholder="Date">
+                                                </div>
+                                                <div class="col-6 col-md-3">
+                                                    <input type="time" style="color:black" class="form-control" id="time" name="telnum" placeholder="Time">
+                                                </div>
+                                            </div>
+                                                        
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-6 col-md-6 offset-md-2">
+                                                    <button type="submit" class="swd-button btn bg-secondary">Cancel</button>
+                                                    <a type="submit" class="swd-button btn btn-primary">Reserve</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>         
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
-                <div class="col-3 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
-                </div>
-                <div class="col-3 align-self-center">
-                    <a href="#scroll-target" role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"  title="Or Call us at +852 12345678"
-                        data-placement="bottom" href="#reserveform">Reserve Table</a>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
+            </header>
+            
+        
 <!------------------------------------------------------------Jumbotron End--------------------------------------------------------------------->
 <!--------------------------------------------------------------images and Text------------------------------------------------------------->    
     <div class="container">
@@ -243,9 +328,9 @@
     </div>
 
 <!-----------------------------------------------------card and form------------------------------------------------------------------------>
-    <div class="container">
+    <!----<div class="container">
         <div class="row row-content align-items-center">
-    <div class="col-12 col-sm-8 align-self-center">
+            <div class="col-12 col-sm-8 align-self-center">
         
         <div class="card" id="scroll-target">
             <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -254,35 +339,35 @@
             <div class="form-group row">
             <label for="noofguest" class="col-12 col-md-2 col-form-label" id="noofguest">Number of Guests</label>
             
-            <!-- Default inline 1-->
+            
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
                 <label class="custom-control-label" for="defaultInline1">1</label>
             </div>
             
-            <!-- Default inline 2-->
+            
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
                 <label class="custom-control-label" for="defaultInline2">2</label>
             </div>
             
-            <!-- Default inline 3-->
+            
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
                 <label class="custom-control-label" for="defaultInline3">3</label>
             </div>  
             
-            <!-- Default inline 4-->
+            
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
                 <label class="custom-control-label" for="defaultInline4">4</label>
             </div> 
-            <!-- Default inline 5-->
+            
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline5" name="inlineDefaultRadiosExample">
                 <label class="custom-control-label" for="defaultInline5">5</label>
             </div> 
-            <!-- Default inline 6-->
+            
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline6" name="inlineDefaultRadiosExample">
                 <label class="custom-control-label" for="defaultInline6">6</label>
@@ -310,7 +395,7 @@
         </div>
     </div>
     </div>
-</div>
+</div>---->
 
 <!------------------------------------------------------------------------card and form end---------------------------------------------------->
     <footer class="row footer">
